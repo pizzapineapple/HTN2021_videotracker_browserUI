@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>Image Summerisation Tool</title>
+  <script type="text/javascript" src="script.js"> </script>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="video_summary.json"></script>
+    
+  </head>
+
+  <body>
+
+    <h1 style="color:#ccccfc">Video Summerization Tool</h1>
+    <input type="text" id="search" class="search" name="fname">
+      
+    <button type="button" id="searchButton" class="search" onclick="search()"> Search</button>
+
+    <!-- 
+    <div class="sidenav" id="sidePane">
+      <a href="#about">This is text</a>
+      <a href="#about">This is text</a>
+
+    </div> -->
+
+    <div class="searchBar>
+      <label type="text" id="searchField"> </label>
+
+    </div>
+
+    <div>
+      <table class="sidenav" id="sidePane">
+        <tr onclick="jump(5)" class="><td >Test</td></tr>
+      </table>
+    </div>
+
+    <div id="wrapper">
+      <div id='player_wrapper'>
+
+        <video id='video_player'>
+          <source src='camera-monitoring-traffic.mp4' type='video/mp4'>
+        </video>
+
+
+
+
+
+        <div id='player_controls'>
+
+          <img src="GUI/play.jpg" width="25" height="25" onclick="togglePlay()"  id="play_button"></img>
+
+
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
